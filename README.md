@@ -30,8 +30,12 @@ After Installation of requirements you can start project using on terminal
 ```
 python Fantasy_Cricket.py
 ```
+You can findout working [Demo](https://github.com/chavarera/Fantasy-Cricket-Game/blob/master/Screenshots/Demo) here
 
-End with an example of getting some data out of the system or using it for a little demo
+Working Copy
+![FinalWindow](https://github.com/chavarera/Fantasy-Cricket-Game/blob/master/Screenshots/3_Selected_Team.PNG?raw=true)
+
+
 
 
 ## Built With
