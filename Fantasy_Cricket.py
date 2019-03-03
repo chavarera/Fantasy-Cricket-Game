@@ -451,7 +451,6 @@ class Ui_MainWindow(object):
                         self.ShowError(msg)
                 # FOR ALLROUNDER
                 elif self.AR.isChecked() == True:
-                    print(self.allroundscount)
                     if self.allroundscount >= 0 and self.allroundscount < 2:
                         self.PointsSet(selectedit)
                         self.listWidget.takeItem(self.listWidget.row(item))
@@ -759,9 +758,7 @@ class Ui_MainWindow(object):
             self.ScoreDialog.show()
             d1 = DataHandler()
             squry = "Update teams set value=? where name=?"
-            print(squry)
             data = d1.InsertItems(squry, (self.adds, self.evaluate_screen.cbteam.currentText()))
-            print(data)
             self.score_screen.label_2.setText('{}'.format(self.adds))
         else:
             message="Please Select team And Match"
