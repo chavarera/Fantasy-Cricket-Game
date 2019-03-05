@@ -52,6 +52,7 @@ Working Copy
 See also the list of [contributors](https://github.com/chavarera/Fantasy-Cricket-Game/contributors) who participated in this project.
 
 ## License
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
