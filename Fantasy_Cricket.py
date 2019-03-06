@@ -387,6 +387,10 @@ class Ui_MainWindow(object):
         sel=["BAT","BOW","AR","WK"]
         values=[sel[idx] for idx,c in enumerate(checked) if c==True]
         sql = "select player ||'-'|| ctg from players where ctg='{}'".format(values[0])
+        self.check2 = []
+        for i in range(self.listWidget_2.count()):
+            items = self.listWidget_2.item(i).text()
+            self.check2.append(items)
 
         #get Data
         d1=DataHandler()
@@ -401,6 +405,8 @@ class Ui_MainWindow(object):
                 font.setWeight(100)
                 item.setFont(font)
                 item.setBackground(QtGui.QColor('light gray'))
+                if(players[i] in self.check2):
+                    item.setForeground(QtGui.QColor('red'))
                 self.listWidget.addItem(item)
     def GetPlayerpoints(self,name):
         sql="select value from stats where name='{}'".format(name)
